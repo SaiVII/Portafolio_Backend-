@@ -6,82 +6,126 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #0a0a0a;
-    color: #fff;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fondo negro */
+    color: #f1f1f1; /* Texto blanco */
     line-height: 1.6;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    background-color: #121212; /* Fondo oscuro */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1f1f1;
+    transform: scale(1.05);
 }
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    background: #333; /* Fondo gris oscuro */
     color: #fff;
-    padding: 50px;
+    padding: 80px 20px 50px 20px;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 80px;
 }
 
 #hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: #fff;
-    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    margin-bottom: 20px;
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 20px 0;
-    color: #b2b2b2;
+    color: #bbb;
 }
 
 #links a {
-    color: #00ffff;
+    color: #f1f1f1;
     text-decoration: none;
     margin: 10px;
-    font-size: 1.2rem;
-    padding: 8px 15px;
-    border: 2px solid #00ffff;
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    border: 2px solid #f1f1f1;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 #links a:hover {
-    background-color: #00ffff;
-    color: #0a0a0a;
+    background-color: #f1f1f1;
+    color: #333;
 }
 
 /* About Section */
 #about {
-    background-color: #1a1a1a;
-    padding: 40px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    background-color: #1d1d1d; /* Fondo gris oscuro */
+    color: #f1f1f1; /* Texto blanco */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 60px;
 }
 
 #about h2 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff;
+    color: #fff;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
 }
 
 /* Projects Section */
 #projects {
-    margin-top: 40px;
-    background-color: #2a2a2a;
+    margin-top: 60px;
+    background-color: #232323;
     padding: 50px 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    border-radius: 10px;
 }
 
 #projects h2 {
-    font-size: 2rem;
-    color: #ff00ff;
-    text-shadow: 0 0 10px #ff00ff;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -94,104 +138,159 @@ body {
 }
 
 .card {
-    background-color: #333;
+    background-color: #333; /* Fondo gris oscuro */
     color: #fff;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     text-align: center;
     transition: all 0.3s ease;
 }
 
 .card:hover {
+    background-color: #444; /* Fondo más oscuro en hover */
     transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
 }
 
 .card a {
-    color: #00ffff;
+    color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     display: inline-block;
     margin-top: 10px;
-    border: 2px solid #00ffff;
-    padding: 5px 10px;
+    border: 2px solid #fff;
+    padding: 5px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .card a:hover {
-    background-color: #00ffff;
-    color: #0a0a0a;
+    background-color: #fff;
+    color: #333;
 }
 
 /* Contact Section */
 #contact {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 50px 20px;
-    background-color: #1a1a1a;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    background-color: #1d1d1d;
+    border-radius: 10px;
 }
 
 #contact h2 {
-    font-size: 2rem;
-    color: #ff00ff;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
-    text-shadow: 0 0 10px #ff00ff;
     margin-bottom: 20px;
 }
 
 /* Technologies Section */
 #technologies {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 50px 20px;
-    background-color: #2a2a2a;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    background-color: #232323;
+    border-radius: 10px;
 }
 
 #technologies h2 {
-    font-size: 2rem;
-    color: #ff00ff;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .card h3 {
     font-size: 1.5rem;
-    color: #00ffff;
+    color: #f1f1f1;
     margin-bottom: 10px;
 }
 
 .card p {
-    color: #b2b2b2;
+    color: #bbb;
 }
 
 /* Tools Section */
 #tools {
-    margin-top: 40px;
+    margin-top: 60px;
     padding: 50px 20px;
-    background-color: #1a1a1a;
-    border-radius: 20px;
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    background-color: #1d1d1d;
+    border-radius: 10px;
 }
 
 #tools h2 {
-    font-size: 2rem;
-    color: #ff00ff;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
 }
 
+/* Footer */
+#footer {
+    background-color: #121212;
+    color: #f1f1f1;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #f1f1f1;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #bbb;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.8rem;
+    }
+
+    #about h2 {
+        font-size: 2rem;
+    }
+
+    #projects h2, #technologies h2, #tools h2 {
+        font-size: 2rem;
+    }
+
     .social-cards {
         flex-direction: column;
     }
 
     .card {
         width: 100%;
+    }
+
+    .social-links a {
+        font-size: 16px;
+        margin: 0 8px;
     }
 }
